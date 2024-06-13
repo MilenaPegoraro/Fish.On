@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishOn Login</title>
+    <style>
+        @import url('css/style.css');
+    </style>
+</head>
+<body>
+    <div class="title-menu">
+        <h2>Login</h2>
+    </div><hr>
+    <section class="box-login">
+
+        <div class="container-img"><a href="./home.html"><img src="./logo_23.png" alt="logo FishOn"></a></div>
+
+        <form action="">
+            <input type="email" name="Email" id="email" required placeholder="E-mail"><br>
+            <input type="password" name="Senha" id="senha" required placeholder="Senha">
+            <div id="mensagem">
+            </div>
+        </form>
+        <div class="continue">
+            <a id="corfirme-login" href="#" ><button  onclick="login()">Continuar</button></a>
+        </div>
+        <div class="return">
+            <a href="./home.html" ><button onclick="">Voltar</button></a>
+        </div>
+    </section>
+    <script>
+        function login() {
+            let email = document.getElementById('email').value;
+            let senha = document.getElementById('senha').value;
+
+            if (email == ""){ 
+               document.createElement("p");
+               mensagem.innerText = "Preencha o campo de e-mail"
+               document.getElementById("mensagem").appendChild(mensagem)}
+            else if (email != "pesqueiro@gmail.com") {
+                document.createElement("p");
+                mensagem.innerText = "E-mail inválido"
+                document.getElementById("mensagem").appendChild(mensagem)
+            }else if (senha == "") {
+                document.createElement("p");
+                mensagem.innerText = "Preencha o campo de senha"
+                document.getElementById("mensagem").appendChild(mensagem)
+            }else if (senha != "1234") {
+                document.createElement("p");
+                mensagem.innerText = "Senha inválida"
+                document.getElementById("mensagem").appendChild(mensagem)
+            }else{
+                window.location.href= "./index.html"
+                // window.alert("Sucesso!")
+            }
+        }
+        
+    </script>
+</body>
+</html>

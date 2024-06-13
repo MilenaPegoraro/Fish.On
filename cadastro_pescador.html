@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishOn - Cadastre-se como Pescador</title>
+    <style>       
+        @import url('./css/style.css');
+    </style>
+</head>
+<body>
+    <div class="title-menu">
+        <h2>Crie uma conta como Pescador</h2>
+    </div><hr>
+    <section class="box-login">
+
+        <div class="container-img"><a href="./home.html"><img src="./logo_23.png" alt="logo FishOn"></a></div>
+
+        <form action="#">
+            <input type="text" name="nome" id="nome-pescador" placeholder="Nome do Pesqueiro">
+            <input type="text" name="Email" id="email-pescador" placeholder="E-mail">
+            <input type="password" name="Senha" id="senha-pescador" placeholder="Senha">
+        </form>
+        <div id="mensagem">
+        </div>
+        <div class="continue">
+            <a href="#"><button onclick="validCadasPesc()">Continuar</button></a>
+        </div>
+        <div class="return">
+            <a href="./home.html"><button onclick="">Voltar</button></a>
+        </div>
+    </section>
+   
+</body>
+
+<script>
+    function validCadasPesc() {
+   
+   const j_nome = document.getElementById('nome-pescador').value
+   const j_email = document.getElementById('email-pescador').value
+   const j_senha = document.getElementById('senha-pescador').value
+
+   if (j_nome == "") {
+       document.createElement("p");
+       mensagem.innerText = "Preencha o campo de nome"
+       document.getElementById("mensagem").appendChild(mensagem)
+   } else if (j_email == "") {
+       document.createElement("p");
+       mensagem.innerText = "Preencha o campo de e-mail"
+       document.getElementById("mensagem").appendChild(mensagem)
+
+   } else if (j_senha == "") {
+       document.createElement("p");
+       mensagem.innerText = "Preencha o campo de senha"
+       document.getElementById("mensagem").appendChild(mensagem)
+   } else {
+    window.alert("Cadastro realizado com sucesso!")
+        window.location.href= "./login.html"
+        
+   }
+
+
+}
+</script>
+</html>

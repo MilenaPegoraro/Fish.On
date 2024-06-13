@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishOn - Cadastre-se como Pesqueiro</title>
+    <style>       
+        @import url('./css/style.css');
+    </style>
+</head>
+<body>
+    <div class="title-menu">
+        <h2>Crie uma conta como Pesqueiro</h2>
+    </div><hr>
+    <section class="box-login">
+
+        <div class="container-img"><a href="./home.html"><img src="./logo_23.png" alt="logo FishOn"></a></div>
+
+        <form action="#">
+
+            <input type="text" name="nome" id="inome" placeholder="Nome do Pesqueiro">
+            <input type="email" name="Email" id="email" placeholder="E-mail">
+            <input type="password" name="Senha" id="senha" placeholder="Senha">
+            <input type="number" name="cnpj" id="cnpj" placeholder="CNPJ">
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+            <input type="file" id="imagem" name="arquivos" class="btn btn-success"  accept="image/png, image/jpeg"  multiple /> 
+
+        </form>
+        <div id="mensagem">
+
+        </div>
+        <div class="continue">
+            <a href="#"><button onclick="validCadasPesq()">Continuar</button></a>
+        </div>
+        <div class="return">
+            <a href="./home.html"><button onclick="">Voltar</button></a>
+        </div>
+    </section>
+   
+</body>
+
+<script src="js/cadastro_pesqueiro.js"></script>
+</html>
