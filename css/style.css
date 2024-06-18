@@ -277,6 +277,16 @@ button{
     color: #1a5b95;
     text-decoration: none;
 }
+.pesquisa{
+    height: 50px;
+    color: #1a5b95;
+}
+.pesquisa-img{
+    height: 64px;
+    width: 64px;
+    margin-right: 10px;
+}
+
 
 /* TELA CADASTRO PESQUEIRO */
 body, p{
